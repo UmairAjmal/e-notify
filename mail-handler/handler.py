@@ -13,6 +13,7 @@ def lambda_handler(event, context):
     s3_response = event["Records"][0]["s3"]
     bucket = str(s3_response["bucket"]["name"])
     key = str(s3_response["object"]["key"])
+    print(key)
     attachment_path = "/tmp/" + os.path.basename(key)
     print(attachment_path)
     try:

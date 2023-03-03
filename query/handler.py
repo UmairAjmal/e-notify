@@ -9,7 +9,7 @@ def lambda_handler(event, context):
         query_result_bucket = 's3://temp-bucket-umair/scheduled/'
     database = 'employee'
     response = ''
-    print(event)
+    print(event, 'sdfsd')
     query = event["query"]
     response = ''
     try:
